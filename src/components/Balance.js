@@ -9,10 +9,10 @@ export const Balance = () => {
     const transactioAmounts = transactions.map(transaction => transaction.amount);
     const balance = transactioAmounts.reduce((a, b) => (a + b), 0);
     return (
-        <div>
+        <center>
             <h4>Balance:</h4>
             <h1>${balance}</h1>
-        </div>
+        </center>
     )
 }
 

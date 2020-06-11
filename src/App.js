@@ -9,7 +9,6 @@ import { GlobalProvider } from './context/GlobalContext'
 function App() {
   return (
     <GlobalProvider>
-      <h1>Expense Tracker</h1>
       <div className="container">
         <Balance />
         <IncomeExpenses />

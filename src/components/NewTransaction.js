@@ -29,10 +29,11 @@ import { GlobalContext } from '../context/GlobalContext'
                 <div className="form-control">
                 <input type="text" value={title} onChange={(e) => {setTitle(e.target.value)}} placeholder="Title" />
                 </div>
-                <div className="form-control">
+                <br/>
+                <span className="form-control">
                 <input type="number" value={amount} onChange={(e) => {setAmount(e.target.value)}} placeholder="Amount" />
-                </div>
-                <button className="btn">Add transaction</button>
+                </span>
+                <button className="btn">Add</button>
             </form>
         </div>
     )
