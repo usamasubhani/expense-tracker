@@ -4,7 +4,10 @@ import AppReducer from './AppReducer'
 const startingState = {
     transactions: [
         { id: 1, title: 'WOW', amount:100},
-        { id: 2, title: 'Nice', amount:10}
+        { id: 2, title: 'Nice', amount:10},
+        { id: 3, title: 'Damn', amount:-30},
+        { id: 4, title: 'Yuo', amount:33},
+        { id: 5, title: 'Done', amount:-10}
     ]
 }
 
