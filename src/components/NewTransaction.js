@@ -1,14 +1,16 @@
 import React, { useState, useContext } from 'react';
-
 import { GlobalContext } from '../context/GlobalContext'
 
 
  function AddTransaction() {
-
+    // Global Context
     const { addTransaction } = useContext(GlobalContext);
 
+    // Local Context
     const [title, setTitle] = useState('');
     const [amount, setAmount] = useState(0);
+    
+    // Create transaction on form submit
     const onSubmit = (e) => {
         e.preventDefault();
 
@@ -17,9 +19,7 @@ import { GlobalContext } from '../context/GlobalContext'
             title,
             amount: +amount,
         }
-
         addTransaction(newTransact);
-        console.log(newTransact)
     }
 
     return (

@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
-
 import { GlobalContext } from '../context/GlobalContext'
 
 export const IncomeExpenses = () => {
     const { transactions } = useContext(GlobalContext);
-
+    
+    // Calculate income and expenses
     const transactioAmounts = transactions.map(transaction => transaction.amount);
-    const income = transactioAmounts.filter(i => i>0).reduce((a, b) => (a+b), 0)
-    const expense = -transactioAmounts.filter(i => i<0).reduce((a, b) => (a+b), 0)
+    const income = transactioAmounts.filter(i => i>0).reduce((a, b) => (a+b), 0);
+    const expense = -transactioAmounts.filter(i => i<0).reduce((a, b) => (a+b), 0);
+    
     return (
         <div>
             <div className="inc-exp-container">

@@ -8,7 +8,6 @@ export default (state, action) => {
             return {
                 ...state,
                 transactions: [action.payload, ...state.transactions]
-                // transactions: [...state, action.payload]
             }
         default:
             return state;
